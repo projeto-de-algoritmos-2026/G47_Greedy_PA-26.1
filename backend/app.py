@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from algorithm import minimize_lateness
+from metrics import calculate_metrics
 
 app = Flask(__name__)
 CORS(app)
