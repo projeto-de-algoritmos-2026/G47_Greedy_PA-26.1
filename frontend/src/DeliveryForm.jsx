@@ -28,10 +28,10 @@ export default function DeliveryForm({ onResult, apiFn = mockOptimize }) {
   }
 
   return (
-    <div>
-      <h2>Cadastro de Entregas</h2>
+    <div className="card">
+      <div className="card-title">Cadastro de Entregas</div>
 
-      <div>
+      <div className="form-row">
         <input
           name="nome"
           placeholder="Nome da entrega"
@@ -52,20 +52,28 @@ export default function DeliveryForm({ onResult, apiFn = mockOptimize }) {
           value={form.deadline}
           onChange={handleChange}
         />
-        <button onClick={handleAdd}>Adicionar</button>
+        <button className="btn btn-secondary" onClick={handleAdd}>
+          Adicionar
+        </button>
       </div>
 
       {entregas.length > 0 && (
-        <ul>
+        <ul className="delivery-list">
           {entregas.map((e) => (
-            <li key={e.id}>
-              {e.nome} — {e.duracao} min — prazo: {e.deadline} min
+            <li key={e.id} className="delivery-item">
+              <span className="delivery-name">{e.nome}</span>
+              <span className="delivery-badge">{e.duracao} min</span>
+              <span className="delivery-badge deadline">prazo: {e.deadline} min</span>
             </li>
           ))}
         </ul>
       )}
 
-      <button onClick={handleOptimize} disabled={entregas.length === 0}>
+      <button
+        className="btn btn-primary"
+        onClick={handleOptimize}
+        disabled={entregas.length === 0}
+      >
         Otimizar
       </button>
     </div>

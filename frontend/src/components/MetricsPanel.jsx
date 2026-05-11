@@ -1,64 +1,35 @@
-import "./MetricsPanel.css"
+import './MetricsPanel.css'
 
-function MetricsPanel({ metrics }) {
+function MetricsPanel({ resultado }) {
+  if (!resultado) return null
 
-  if (!metrics) {
-
-    return null
-  }
+  const { max_atraso_antes, max_atraso_depois } = resultado
+  const economia = max_atraso_antes - max_atraso_depois
+  const percentual = max_atraso_antes > 0
+    ? Math.round((economia / max_atraso_antes) * 100)
+    : 0
 
   return (
-
     <div className="metrics-panel">
-
-      <h2>Métricas Comparativas</h2>
-
       <div className="metrics-grid">
-
-        <div className="metric-card">
-
-          <h3>Distância</h3>
-
-          <p>
-            Antes: {metrics.before_distance} km
-          </p>
-
-          <p>
-            Depois: {metrics.after_distance} km
-          </p>
-
-        </div>
-
-        <div className="metric-card">
-
-          <h3>Atrasos</h3>
-
-          <p>
-            Antes: {metrics.before_delay} min
-          </p>
-
-          <p>
-            Depois: {metrics.after_delay} min
-          </p>
-
+        <div className="metric-card danger">
+          <h3>Maior atraso antes</h3>
+          <div className="metric-value">{max_atraso_antes} <span>min</span></div>
+          <div className="metric-sub">na ordem original</div>
         </div>
 
         <div className="metric-card savings">
-
-          <h3>Economia</h3>
-
-          <p>
-            {metrics.savings} km economizados
-          </p>
-
-          <p>
-            {metrics.savings_percent}%
-          </p>
-
+          <h3>Maior atraso depois</h3>
+          <div className="metric-value">{max_atraso_depois} <span>min</span></div>
+          <div className="metric-sub">após otimização</div>
         </div>
 
+        <div className="metric-card savings">
+          <h3>Economia</h3>
+          <div className="metric-value">{percentual}%</div>
+          <div className="metric-sub">{economia} min a menos no pior atraso</div>
+        </div>
       </div>
-
     </div>
   )
 }
