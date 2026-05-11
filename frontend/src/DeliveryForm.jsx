@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { optimize } from './mock_api.js'
+import { optimize as mockOptimize } from './mock_api.js'
 
-export default function DeliveryForm({ onResult }) {
+export default function DeliveryForm({ onResult, apiFn = mockOptimize }) {
   const [form, setForm] = useState({ nome: '', duracao: '', deadline: '' })
   const [entregas, setEntregas] = useState([])
 
@@ -23,7 +23,7 @@ export default function DeliveryForm({ onResult }) {
 
   async function handleOptimize() {
     if (entregas.length === 0) return
-    const resultado = await optimize(entregas)
+    const resultado = await apiFn(entregas)
     onResult(resultado)
   }
 
