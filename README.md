@@ -4,6 +4,7 @@
 
 **Número da Lista**: 47<br>
 **Conteúdo da Disciplina**: Greedy Algorithms<br>
+Link apresentação: https://youtu.be/b_qPumT4mzM
 
 ## Alunos
 
