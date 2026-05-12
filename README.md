@@ -133,44 +133,6 @@ Ou abra diretamente o arquivo `index.html` no navegador.
 
 ---
 
-## Uso
-
-1. Abra o frontend no navegador;
-2. Informe:
-
-   * ponto de origem;
-   * ponto de destino;
-3. Escolha a estratégia disponível;
-4. Execute a busca da rota;
-5. Visualize:
-
-   * caminho encontrado;
-   * distância total;
-   * economia gerada;
-   * percentual de melhoria;
-   * detalhes da rota.
-
----
-
-## Estrutura do Projeto
-
-```bash
-G47_Greedy_PA-26.1
-│
-├── backend/
-│   ├── algorithms/
-│   ├── services/
-│   ├── metrics.py
-│   ├── app.py
-│   └── requirements.txt
-│
-├── frontend/
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
-│
-└── README.md
-```
 
 ---
 
