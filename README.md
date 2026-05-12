@@ -11,10 +11,26 @@
 |  241025784| João Paulo da Silva Pereira |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+Este repositório reúne implementações e estudos relacionados ao paradigma Greedy, abordando problemas clássicos de otimização e estratégias de escolha local ótima.
+
+O objetivo principal é analisar:
+
+Eficiência dos algoritmos;
+Complexidade assintótica;
+Estratégias de otimização;
+Aplicações práticas do paradigma guloso.
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+
+## 🚀 Execução Principal do Projeto
+
+<p align="center">
+  <img src="./assets/execution-1.png" alt="Execução Principal" width="800">
+</p>
+
+<p align="center">
+  Tela inicial da execução do algoritmo guloso.
+</p>
 
 ## Instalação 
 **Linguagem**: xxxxxx<br>
