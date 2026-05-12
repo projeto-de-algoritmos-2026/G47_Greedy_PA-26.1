@@ -16,26 +16,7 @@
 
 ## Sobre
 
-O projeto tem como objetivo aplicar algoritmos gulosos (*Greedy Algorithms*) para encontrar rotas mais eficientes entre diferentes pontos de uma cidade, utilizando dados reais de mapas através da biblioteca OSMnx.
-
-A aplicação recebe uma origem e um destino informados pelo usuário e calcula diferentes estratégias de rotas, analisando fatores como:
-
-* menor distância;
-* economia de percurso;
-* percentual de melhoria;
-* comparação entre algoritmos;
-* detalhes da rota encontrada.
-
-O sistema possui:
-
-* **Backend em Flask**, responsável pelos algoritmos, cálculos e API;
-* **Frontend web**, responsável pela interface visual e exibição dos resultados;
-* Integração com grafos utilizando:
-
-  * OSMnx
-  * NetworkX
-
-O projeto demonstra, na prática, como algoritmos gulosos podem ser utilizados para resolver problemas reais de otimização de caminhos.
+O projeto tem como objetivo aplicar algoritmos gulosos (*Greedy Algorithms*) para encontrar a ordem com o menor atraso máximo de uma lista de entregas.
 
 ---
 
