@@ -22,17 +22,18 @@ Aplicações práticas do paradigma guloso.
 
 ## Screenshots
 
-## 🚀 Execução Principal do Projeto
 
-<p align="center">
-  <img src="./assets/execution-1.png" alt="Execução Principal" width="800">
-</p>
+## Instalação
 
-<p align="center">
-  Tela inicial da execução do algoritmo guloso.
-</p>
+**Linguagem**: C / C++<br>
+**Framework**: Não utilizado<br>
 
-## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+### Pré-requisitos
+
+- GCC ou G++
+- Git
+
+### Clonar o Repositório
+
+```bash
+git clone https://github.com/projeto-de-algoritmos-2026/G47_Greedy_PA-26.1.git
