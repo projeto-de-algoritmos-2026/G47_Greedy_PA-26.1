@@ -2,7 +2,7 @@
 
 ## Nome do Projeto
 
-**Número da Lista**: 1<br>
+**Número da Lista**: 47<br>
 **Conteúdo da Disciplina**: Greedy Algorithms<br>
 
 ## Alunos
