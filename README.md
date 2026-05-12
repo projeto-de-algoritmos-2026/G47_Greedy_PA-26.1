@@ -43,15 +43,15 @@ O projeto demonstra, na prática, como algoritmos gulosos podem ser utilizados p
 
 ### Tela Inicial
 
-Adicione aqui uma imagem da tela inicial do sistema.
+![Tela Inicial](images/tela_1.png)
 
 ### Resultado das Rotas
 
-Adicione aqui uma imagem mostrando as rotas calculadas.
+![Resultado das Rotas](images/tela_2.png)
 
 ### Comparação dos Algoritmos
 
-Adicione aqui uma imagem exibindo as métricas e economia gerada.
+![Comparação dos Algoritmos](images/tela_3.png)
 
 ---
 
@@ -197,8 +197,7 @@ G47_Greedy_PA-26.1
 
 * Python
 * Flask
-* OSMnx
-* NetworkX
+* React
 * HTML
 * CSS
 * JavaScript
@@ -211,4 +210,4 @@ Este projeto foi desenvolvido para a disciplina de Projeto de Algoritmos da Univ
 
 Repositório oficial:
 
-[G47_Greedy_PA-26.1](https://github.com/projeto-de-algoritmos-2026/G47_Greedy_PA-26.1.git?utm_source=chatgpt.com)
+[G47_Greedy_PA-26.1](https://github.com/projeto-de-algoritmos-2026/G47_Greedy_PA-26.1.git)
